@@ -184,20 +184,20 @@
     .category{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4rem;
+    grid-gap: 2rem;
     margin-top: 34rem;
   
     }
   
     .category .product .image img{
       border-radius: 20px;
-      width: 180px;
+      width: 130px;
      border-color: rgb(255, 0, 0);
       border-style: ridge;
     } 
     .category .product{
       border-radius: 20px;
-      width: 210px;
+      width: 160px;
       border-style: groove;
      
     }
