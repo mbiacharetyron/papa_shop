@@ -1,0 +1,129 @@
+/* <!-- <!-======================== categories styling====================================== > --> */
+.section{
+
+  justify-content: center;
+}
+ 
+.category{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 3rem;
+}
+
+
+.category .product .image img{
+  border-radius: 20px;
+  width: 200px;
+ border-color: rgb(255, 0, 0);
+  border-style: ridge;
+} 
+.category .product{
+  border-radius: 20px;
+
+  width: 200px;
+  border-style: groove;
+ 
+}
+
+.category .product:hover{
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section .category .product>div{
+  text-align: center;
+}
+
+section .category .product div a{
+  justify-content: center;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding: .5rem;
+  margin: 0.8em;
+  
+}
+.vasespace{
+  margin-bottom: 90rem;
+}
+.framespace{
+  margin-bottom: 120rem;
+}
+.chairspace{
+  margin-bottom: 40rem;
+}
+.space1{
+  margin-top: 10rem;
+}
+
+section .category .product div a:hover{
+  background-image: linear-gradient(90deg, 
+  #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, 
+  #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
+color: black;
+}
+
+.cat-title{
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  font-family: 'Tapestry', cursive;
+  background-color: black;
+  padding: 1.5rem;
+  margin-bottom: 0rem !important;
+ 
+}
+
+
+.price1{
+  color: green;
+  font-size: 1.5rem;
+  margin: 0.4em;
+}
+
+
+
+.price2{
+  color: rgb(251, 2, 2);
+  text-decoration: line-through;
+}
+
+
+footer{
+ 
+  padding-left: 6em;
+}
+
+@media only screen and (max-width: 768px) {
+  .category{
+   
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+
+  
+  }
+
+  .category .product .image img{
+    border-radius: 20px;
+    width: 100px;
+   border-color: rgb(255, 0, 0);
+    border-style: ridge;
+  } 
+  .category .product{
+    border-radius: 20px;
+ 
+    width: 160px;
+    border-style: groove;
+   
+  }
+  
+}
+
+  
+  
+  
+/* <!-- <!-======================== categories styling====================================== > --> */

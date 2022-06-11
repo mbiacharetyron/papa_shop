@@ -1,0 +1,67 @@
+ .site-content{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+main .post-content{
+    width: 50%;
+    
+}
+footer{
+    margin-top: 90em;
+}
+
+section{
+    margin-bottom: 85em;
+}
+
+.aboutheader{
+    font-size: 5rem;
+    padding: .4rem 10rem;
+    margin-top: 2em;
+}
+  
+.aboutcontent{
+    font-size: 2rem;
+    padding: .4rem 7rem;
+}
+
+
+.site-content .post-content > .post-image .img{
+    width: 80%;
+    transition: all 1s ease;
+    border-style: ridge;
+    border-radius: 80%;
+    border-color: red;
+    margin-top: 8em;
+    margin-left: 8em;
+    
+} 
+
+.site-content > .sidebar .category-list .list-items{
+    background: rgb(136, 184, 243);
+    padding: .4rem 10rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+.site-content > .sidebar .category-list .list-items a{
+    color:  black;
+}
+
+.site-content .sidebar .popular-post .post-content{
+    padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 8rem;
+    margin-top: 20em;
+}
+.sidebar .category{
+   
+    margin-top: 3em;
+   
+}

@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+html {
+	font-size: 10px;
+	
+} 
+body {
+	background: beige;
+	overflow-x: hidden;
+	visibility: visible;
+} 
+section {
+	padding: 100px 0;
+}
+@media only screen and (max-width: 767px) {
+	section {
+		padding: 50px 0;
+	}
+}
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+:root {
+	--green-1: #26643b;
+	--green-2: #a2de96;
+	--lightGreen-1: #d6e5d8;
+	--lightGreen-2: #f5fcf4;
+	--black-1: #3b413a;
+	--black-2: #3f3c3c;
+	--black-3: #5b6359;
+	--white-1: #e8e8e8;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Tapestry', cursive;
+}
+p {
+	font-family: Raleway;
+	font-weight: 400;
+	line-height: 1.4em;
+	font-size: 1.8rem;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+  
+}
+button{
+  cursor: pointer;
+}
+ 
+div i {
+  cursor: pointer;
+}
+
+button:hover{
+  background-image: linear-gradient(90deg, 
+  #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, 
+  #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
+color: black;
+cursor: pointer;
+}
+
+/*-======================== navigation styling====================================== */
+.nav{
+    padding:0;
+    padding-top: 2rem;
+    position: sticky;
+    z-index: 99;
+    width: 100%;
+    top: 0; 
+    background: rgb(255, 255, 255);
+    
+}
+.nav .container img{
+	width: 30rem;
+	
+}
+.nav__icon,
+.nav__close,
+.nav__bgOverlay {
+	display: none;
+} 
+.nav__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.nav__list li {
+	display: inline-block;
+	color: red;
+  margin: 0 1rem;
+
+}
+.nav__list .nav__link {
+	font-size: 20px;
+  font-weight: 600;
+	font-family: 'Tapestry', cursive;
+	color: var(--black-2);
+	padding: 0.5rem;
+  
+}
+
+
+.nav__list li:hover .nav__link {
+color: rgb(255, 30, 0) ;
+}
+.btn {
+	color: var(--green-1);
+	font-family: Poppins;
+	font-weight: 300;
+	border-radius: 8px;
+	font-size: 2rem !important;
+	padding: 1.2rem 2rem;
+}
+.btn:hover{
+    background-image: linear-gradient(90deg, 
+    #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, 
+    #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
+	color: black;
+ }
+.primary-btn {
+	color: black;
+	background: red;
+  font-family: 'Tapestry', cursive;
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+	.nav {
+		position: sticky;
+		/* overflow-x: scroll; */
+	}
+	.nav__icon {
+		display: block;
+	}
+	.nav__icon svg,
+	.nav__close svg {
+	cursor: pointer;
+		height: 30px;
+		width: 30px;
+	}
+	.nav__close {
+		display: block;
+		position: absolute;
+		color: red;
+		right: 1rem;
+		top: 1rem;
+		cursor: pointer;
+	}
+
+
+    .nav__list {
+		z-index: 1000;
+		position: absolute; 
+		left: 100%;
+		top: 0;
+		height: 100vh;
+		width: 70%;
+		background: var(--lightGreen-1);
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding-right: 2rem;
+		transform: translate(0%);
+		overflow: hidden;
+		transition: 0.3s ease-in transform;
+        margin-top : 2rem;
+	}
+
+
+    .nav__list.show { 
+		transform: translate(-100%);
+	}
+    .nav__list li {
+		display: block;
+		text-align: right;
+		margin-bottom: 2rem;
+	}
+    .nav__list a {
+		font-size: 1.6rem;
+	}
+
+
+    .nav__bgOverlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1000;
+		height: 100vh;
+		width: 100%;
+		background: rgba(18, 24, 14, 0.808);
+		display: none;
+	}
+	
+
+
+    
+
+}
+
+
+/* ==========================navigation styling================================================= */
+
+
+/* <!-- ----------x---------- house--------x-------- --> */
+
+.body1{
+  height: 550px;
+  max-width: 100%;
+  background-image: linear-gradient(rgba(17, 4, 4, 0.75),rgba(14, 15, 15, 0.75)),url(./house.jpg);
+  margin-top: 0;
+  margin-bottom: 10em;
+
+
+}
+
+
+.body1  .house .head{
+padding-top: 15rem;
+  
+  font-weight: 500px;
+ font-size: 100px;
+  text-align: center;
+color:white;
+font-family: 'Lobster Two', cursive;
+
+}
+
+
+
+.body1  .house .body{
+  
+  font-family: 'My Soul', cursive;
+  font-size: 70px;
+  color: red;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.body1 .house .body{
+  font-size: 50px;
+}
+
+.body1  .house .head{
+  font-weight: 250px;
+  font-size: 70px;
+}
+
+}
+/* <!-- ----------x---------- house--------x-------- --> */
+
+
+
+
+/* --------------- Blog Carousel ------------ */
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+section{
+  position: relative;  
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+ 
+}
+
+
+
+.swiper{
+  width: 80%;
+margin-top: 5em;
+margin-bottom: 13rem;
+ 
+}
+
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  height: 65%;
+  width: 100%;
+  background: #0c0a0a;
+  border-radius: 20px 20px 0 0;
+  
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 100;
+}
+
+section .card .image{
+  height: 245px;
+  width: 200px;
+  border-radius: 5%;
+  
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card .media-icons{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.card .media-icons i{
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card .media-icons i:hover{
+  opacity: 1;
+}
+
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+ 
+} 
+
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+.name-profession .profession{
+  font-size:15px;
+  font-weight: 500;
+}
+
+.card .rating{
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.card .rating i{
+  font-size: 18px;
+  margin: 0 2px;
+  color: #fc0404;
+}
+
+.card .button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card .button a{
+  background: #0b0b0c;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  justify-content: center;
+  margin: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+}
+.card .button a button{
+  cursor: pointer;
+}
+
+.button button:hover{
+  background: #030107;
+}
+
+.swiper-pagination{
+  position: absolute;
+  padding-top: 50px;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #09070c;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #07010e;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #06020c;
+}
+
+
+/* -------x------- Blog Carousel -----x------ */
+/* ----------------- Footer --------------------- */
+
+footer.footer{
+  height: 100%;
+  background: black;
+  color: white;
+  position: relative;
+  margin-top: 30rem;
+  /*margin-top: 150rem;*/
+  bottom: 0;
+}
+
+footer.footer .container{
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+}
+
+footer.footer .container > div{
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+  color: red;
+font: size 15px;;
+}
+
+
+footer li{
+
+font-size: 12px !important;
+text-decoration: none;list-style: none;
+padding-left: 3rem;
+}
+
+
+
+footer.footer .newsletter .form-element span{
+  background: var(--sky);
+  padding: .5rem .7rem;
+  cursor: pointer;
+}
+
+
+
+footer.footer .follow div i{
+  color: var(--white);
+  padding: 0 .4rem;
+}
+
+footer.footer .rights{
+  justify-content: center;
+  font-family: var(--Josefin);
+}
+
+footer.footer .rights h4 a{
+  color: var(--white);
+}
+
+footer.footer .move-up{
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+
+footer.footer .move-up span{
+  color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+  color: var(--white);
+  cursor: pointer;
+}
+
+.meubles li{
+
+font-size: 1rem;
+text-decoration: none;
+
+
+}
+
+@media only screen and (max-width: 520px){
+  main .blog{
+      height: 125vh;
+  }
+
+  .site-content .post-content > .post-image .post-info{
+      display: none;
+  }
+
+  footer.footer .container > div{
+      padding:  1rem .9rem !important;
+      
+  }
+
+  footer .rights{
+      padding: 0 1.4rem;
+      text-align: center;
+  }
+
+  nav .toggle-collapse{
+      width: 80% !important;
+  }
+  footer.footer .container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer.footer .container > div{
+  padding:  1rem .9rem !important;
+}
+
+footer .rights{
+  padding: 0 1.4rem;
+  text-align: center;
+}
+
+}
+.email{
+margin-top: 2em;
+padding-left: 3em;
+font-family: 'Tapestry', cursive;
+
+}
+.emaill{
+font-size: 1rem;
+}
+/* ---------x------- Footer ----------x---------- */
+
+
